@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+@import "tailwindcss";
+
+body {
+  @apply bg-[#0A0A0A] text-white;
+  font-family: "Tajawal", sans-serif;
+  ::selection {
+    background-color: #F97316;
+    color: white;
+  }
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0a0a0a;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #333333;
+  border-radius: 999px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #f97316;
+}
+
+.btn-primary {
+  @apply cursor-pointer 
+   px-8 py-4 
+   rounded-full 
+   border-none
+
+      text-sm 
+      font-semibold 
+      
+      transition-all
+      duration-300
+      bg-linear-to-r from-[#f97316] to-[#ea580c];
+      border-radius: 3.40282e38px;
+      justify-content: center;
+      align-items: center;
+    
+      transition-duration: .3s;
+      display: inline-flex;}
+  
+.input-dark:focus-within {
+  border-color: #f97316;
+  box-shadow: 0 0 0 3px #f973161a;
+}
+    
+   
+   
+   @layer utilities {
+  .bg-orange-500-10 {
+    background-color: color-mix(in oklab, var(--color-orange-500) 10%, transparent);
+  }
+}
+
+@layer utilities {
+  .bg-orange-500\/10 {
+    background-color: color-mix(in oklab, var(--color-orange-500) 10%, transparent);
+  }
+
+  .hover\:bg-orange-500\/5:hover {
+        background-color: #fe6e000d;
+    }
+
+  .bg-orange-500\/20 {
+        background-color: 
+color-mix(in oklab, var(--color-orange-500) 20%, transparent);
+    }
+
+      .from-orange-500\/10 {
+        --tw-gradient-from: 
+color-mix(in oklab, var(--color-orange-500) 10%, transparent);
+    }
+
+  .to-yellow-500\/5 {
+        --tw-gradient-to: 
+color-mix(in oklab, var(--color-yellow-500) 5%, transparent);
+    }
+  .border-orange-500\/30 {
+    border-color: color-mix(in oklab, var(--color-orange-500) 30%, transparent);
+  }
+  .border-orange-500\/20 {
+    border-color: color-mix(in oklab, var(--color-orange-500) 20%, transparent);
+  }
+  .border-orange-500\/50:hover {
+            border-color: color-mix(in oklab, var(--color-orange-500) 50%, transparent);
+        }
+}
+
+
+@layer utilities {
+  .text-white\/70 {
+    color: color-mix(in oklab, var(--color-white) 70%, transparent);
+  }
+  
+}
+
+
+@layer utilities {
+    .bg-white\/5 {
+        background-color: 
+color-mix(in oklab, var(--color-white) 5%, transparent);
+    }
+  }
+
+
+  .gradient-text {
+    -webkit-text-fill-color: transparent;
+    background: linear-gradient(135deg, #f97316, #fbbf24);
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+
+
+.rotate-180 {
+    rotate: 180deg;
+}
+
+.btn-secondary:hover {
+    color: #f97316;
+    background: #f973161a;
+    border-color: #f97316;
+}
+
+
+
+.btn-secondary {
+    cursor: pointer;
+    padding-inline: calc(var(--spacing) * 8);
+    padding-block: calc(var(--spacing) * 4);
+    --tw-font-weight: var(--font-weight-semibold);
+    font-weight: var(--font-weight-semibold);
+    color: var(--color-white);
+    transition-property: all;
+    transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
+    transition-duration: var(--tw-duration, var(--default-transition-duration));
+    --tw-duration: .3s;
+    background-color: #0000;
+    border: 1px solid #333;
+    border-radius: 3.40282e38px;
+    justify-content: center;
+    align-items: center;
+    transition-duration: .3s;
+    display: inline-flex;
+}
+
+
+@media (hover: hover) {
+    .hover\:scale-105:hover {
+        --tw-scale-x: 105%;
+        --tw-scale-y: 105%;
+        --tw-scale-z: 105%;
+        scale: var(--tw-scale-x) var(--tw-scale-y);
+    }
+}
+
+
+.section-subtitle {
+    margin-top: 20px;
+    font-size: var(--text-lg);
+    --tw-leading: var(--leading-relaxed);
+    line-height: var(--leading-relaxed);
+    color: var(--color-neutral-400);
+}
+
+
+.section-label {
+    margin-bottom: calc(var(--spacing) * 6);
+    align-items: center;
+    gap: calc(var(--spacing) * 2);
+    padding-inline: calc(var(--spacing) * 4);
+    padding-block: calc(var(--spacing) * 2);
+    font-size: var(--text-sm);
+    line-height: var(--tw-leading, var(--text-sm--line-height));
+    --tw-font-weight: var(--font-weight-medium);
+    font-weight: var(--font-weight-medium);
+    color: #f97316;
+    background: #f973161a;
+    border: 1px solid #f973164d;
+    border-radius: 3.40282e38px;
+    display: inline-flex;
+}
